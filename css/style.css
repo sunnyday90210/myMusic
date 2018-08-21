@@ -1,22 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* CSS variables */
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+}
+
 body {
-  font-family: 'PT Sans Narrow', sans-serif;
-  background-color: #eee;
-  background-image: url('http://i.cubeupload.com/NjsJx8.png');
+  font-family: 'PT Sans', sans-serif;
+  background-color: #252529;
+  margin: 0;
+  color: white;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.section {
+  padding: 2rem 0;
+}
+.section-head {
+  font-size: 2.5rem;
   margin: 0;
 }
 
-h1 {
-  font-size: 4em;
-  font-family: 'PT Sans Narrow', sans-serif;
-  line-height: 1.1;
-  text-align: center;
-  padding: 10px;
+.section h3 {
+  font-size: 2rem;
 }
 
-p {
-  font-size: 1.2em;
+.btn {
+  padding: 1rem;
+  color: white;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-hover);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-color-hover);
+}
+
+/* Showcase */
+#showcase {
+  margin: 0;
+  padding: 0;
+  background: url('/img/showcase.jpg') no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+#showcase .container {
+  margin-top: 25vh;
+}
+
+#showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+#showcase h2 {
+  font-size: 2rem;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1180px;
   text-align: center;
-  padding: 10px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mt {
+  margin-top: 1rem;
 }
 
 nav {
@@ -24,6 +109,7 @@ nav {
   width: 100%;
   background-color: #333;
   color: #eee;
+  position: fixed;
 }
 nav ul {
   padding: 0;
@@ -49,9 +135,25 @@ nav a#openup {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 2.8em;
+@media screen and (max-width: 580px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  #showcase {
+    height: 50vh;
+  }
+
+  #showcase .container {
+    margin-top: 15vh;
+  }
+
+  #showcase h1 {
+    font-size: 3rem;
+  }
+
+  #showcase h2 {
+    font-size: 1.5rem;
   }
 
   nav {
