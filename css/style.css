@@ -38,26 +38,16 @@ a {
   font-size: 2rem;
 }
 
-.btn {
-  padding: 1rem;
-  color: white;
-  display: inline-block;
+section#entertainment {
+  background: url(../img/section-bg.jpg) no-repeat bottom/cover;
+  padding: 10rem 0;
 }
 
-.btn-primary {
-  background: var(--primary-color);
-}
-
-.btn-primary:hover {
-  background: var(--primary-color-hover);
-}
-
-.btn-secondary {
-  background: var(--secondary-color);
-}
-
-.btn-secondary:hover {
-  background: var(--secondary-color-hover);
+.gift-cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
 }
 
 /* Showcase */
@@ -104,6 +94,45 @@ a {
   margin-top: 1rem;
 }
 
+.btn {
+  padding: 1rem;
+  color: white;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-hover);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-color-hover);
+}
+
+/* Text color */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
 nav {
   height: 40px;
   width: 100%;
